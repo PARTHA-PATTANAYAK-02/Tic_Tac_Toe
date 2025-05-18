@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+
+body {
+  /* background: linear-gradient(#0A1828,#178582,#BFA181); */
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #cec7bf;
+}
+
+.text {
+  text-shadow: 0px 5px 5px black;
+}
+
+.heading {
+  color: #e5e5e5;
+  font-size: 5vmin;
+  text-transform: uppercase;
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+}
+
+.animation {
+  height: 55px;
+  overflow: hidden;
+  margin-left: 1rem;
+}
+
+.animation>div>div {
+  padding: 0.25rem 0.75rem;
+  height: 2.81rem;
+  margin-bottom: 2.81rem;
+  display: inline-block;
+}
+
+.animation div:first-child {
+  animation: text-animation 8s infinite;
+}
+
+.first .f1 {
+  background-color: #20a7d8;
+  border-radius: 10px;
+}
+
+.second .f2 {
+  background-color: #CD921E;
+  border-radius: 10px;
+}
+
+.third .f3 {
+  background-color: #c10528;
+  border-radius: 10px;
+}
+
+@keyframes text-animation {
+  0% {
+    margin-top: 0;
+  }
+
+  10% {
+    margin-top: 0;
+  }
+
+  20% {
+    margin-top: -5.62rem;
+  }
+
+  30% {
+    margin-top: -5.62rem;
+  }
+
+  40% {
+    margin-top: -11.24rem;
+  }
+
+  60% {
+    margin-top: -11.24rem;
+  }
+
+  70% {
+    margin-top: -5.62rem;
+  }
+
+  80% {
+    margin-top: -5.62rem;
+  }
+
+  90% {
+    margin-top: 0;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+.container {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.Top-bar {
+  height: 9vmin;
+  width: 55vmin;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.Icon {
+  height: 90%;
+  width: 10vmin;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 6vmin;
+  gap: 5px;
+
+  & i {
+    text-shadow: 2px 5px 5px black;
+  }
+}
+
+.i1 {
+  color: #00ffb3;
+  text-shadow: 0px 0px 10px #00ffb3;
+}
+
+.i2 {
+  color: #DFFF00;
+  text-shadow: 0px 0px 10px #ffe700;
+}
+
+.turn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 15vmin;
+  background-color: #005F6A;
+  border-radius: 0.3rem;
+  gap: 8px;
+  font-size: 4vmin;
+  padding: 0 3px 0 3px;
+  box-shadow: 3px 3px 10px black, -1px -1px 2px white;
+  transition: all 1s;
+
+  & i {
+    margin-top: 2px;
+    font-size: 5vmin;
+  }
+}
+
+.refresh {
+  height: 10vmin;
+  width: 10vmin;
+  background-color: #20a7d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 5vmin;
+  box-shadow: 3px 3px 10px black, -1px -1px 2px white;
+  transition: all 0.1s;
+
+  &:active {
+    transform: rotate(180deg);
+  }
+}
+.refresh:hover{
+  transition: all 0.2s !important;
+  scale: 1.1;
+}
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2vmin;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 19vmin;
+  width: 18vmin;
+  border: none;
+  border-radius: 1rem;
+  font-size: 14vmin;
+  color: brown;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: #07161b;
+  box-shadow: 3px 3px 10px black, -1px -1px 2px white;
+
+  &:hover {
+    transform: translate(-3px, -3px);
+    scale: 1.06;
+  }
+}
+
+.fotter {
+  height: 9vmin;
+  width: 58vmin;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.result {
+  height: 100%;
+  width: 18vmin;
+  background-color: #154360;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7vmin;
+  gap: 5px;
+  box-shadow: 3px 3px 10px black, -1px -1px 2px white;
+}
+
+.Draw p {
+  text-shadow: 2px 5px 5px black;
+}
+
+.ds {
+  font-size: 5vmin;
+}
+
+.Player1 {
+  background-color: #1C2833;
+
+  & i {
+    font-size: 5vmin;
+  }
+}
+
+.red {
+  background-color: #cf0127 !important;
+}
+
+.green {
+  background-color: #74ee15 !important;
+}
+
+.Gray {
+  background-color: rgb(15, 15, 15) !important;
+}
+
+.Player2 {
+  background-color: #1C2833;
+
+  & i {
+    font-size: 5vmin;
+  }
+}
+
+.Draw {
+  background-color: #707B7C;
+  font-size: 4vmin;
+}
+
+.show-winner {
+  /* border: 5px double #74ee15; */
+  height: 40vmin;
+  width: 100%;
+  background-image: linear-gradient(-60deg, #16a085 0%, #f4d03f 100%);
+  text-align: center;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show-winner p {
+  font-size: 9vmin;
+}
+
+.You-win {
+  color: #74ee15;
+  text-shadow: 2px 3px 5px black;
+}
+
+.winner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vmin;
+
+  & i,
+  p {
+    font-size: 9vmin;
+    text-shadow: 2px 3px 5px black;
+  }
+}
+
+.Next-round-starter {
+  margin-top: 2vmin;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 3rem;
+
+  & button {
+    cursor: pointer;
+    height: 7vmin;
+    width: 15vmin;
+    outline: none;
+    border: none;
+    box-shadow: 2px 3px 5px black;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.2s;
+    &:hover {
+      scale: 1.1;
+      transform: translate(-5px, -5px);
+
+    }
+  }
+}
+
+.btn1 {
+  background-color: #5D6D7E;
+  border-bottom: 2px double white !important;
+  font-size: 4vmin;
+
+}
+
+.btn2 {
+  background-color: #B7950B;
+  border-bottom: 2px double white !important;
+  width: 25vmin !important;
+  font-size: 4vmin;
+}
+/* 
+.blank {
+  margin-top: -535px;
+  position: relative;
+  height: 100.3vmin;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+ .blank {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100vh;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1000;
+   /* Ensure it covers other elements */
+ }
+
+ @media (max-width: 768px) {
+   .blank {
+     height: 100vh;
+     /* Ensure it covers the full viewport height */
+     margin-top: 0;
+     width: 100%;
+     /* Ensure it covers the full viewport width */
+   }
+ }
